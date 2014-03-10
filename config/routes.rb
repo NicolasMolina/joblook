@@ -1,4 +1,25 @@
 Joblook::Application.routes.draw do
+ 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+  devise_for :users
+  root "welcome#index"
+  get '/profile', :to => 'pages#profile'
+  get '/jobs', :to => 'pages#jobs'
+  get '/createjob', :to => 'pages#createjob'
+end
+    
+# SampleApp::Application.routes.draw do
+
+# <--devise_for :admin_users, ActiveAdmin::Devise.config
+#ActiveAdmin.routes(self) -->
+
+  # devise_for :users
+#   get "views/pages"
+#   
+#   
+# 
+#  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -53,4 +74,4 @@ Joblook::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+# end

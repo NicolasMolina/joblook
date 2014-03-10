@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<!--[if IE 6]><html class="ie6 ie"><![endif]-->
+<!--[if IE 7]><html class="ie7 ie"><![endif]-->
+<!--[if IE 8]><html class="ie8 ie"><![endif]-->
+<!--[if IE 9]><html class="ie9 ie"><![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>inner2</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.toggle_btn').click(function(){
+		$(this).next().slideToggle();
+		});
+})
+</script>
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+</head>
+
+<body>
+	
+    <% if user_signed_in? %>
+		<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
+	<% end%>
+    <!--header-->
+    <div class="header">
+        <!--wrapper-->
+        <div class="wrapper">
+            <!--header_cont-->
+            <div class="header_cont add2">
+                <!--navigation-->
+                <div class="navigation">
+                    <ul>
+                        <li class="no_padd_left"><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">LOG IN</a></li>
+                        <li class="no_padd_right no_bg"><a href="#">TERMS AND CONDITIONS</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--navigation-->
+                <strong>HOME</strong>
+                
+                <!--toggle_btn-->
+                <div class="toggle_btn"> <%= image_tag("toggle_nav.png")%> </div>
+                <!--toggle_btn-->
+                
+                <!--toggle_nav-->
+                <div class="toggle_nav">
+                	<ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                    </ul>
+                </div>
+                <!--toggle_nav-->
+            </div>
+            <!--header_cont-->
+            <div class="clear"></div>
+            <div class="logo odd4 odd13">
+               <%= image_tag("logo_img.png") %>
+                <!--login_btn-->
+                <div class="login_btn"><a href="#"> SIGN IN</a></div>
+                <!--login_btn-->
+            </div>
+            <div class="clear"></div>
+	        </div>
+        <!--wrapper-->
+        <div class="clear"></div> 
+    </div>
+    <!--header--> 
+    
+   <!--wrapper-->   
+    <div class="wrapper">
+    	<div class="form_area">
+        	<form action="#" method="post">
+                <div>
+                    <label>USERNAME</label>
+                    <input type="text" name="text" value="" class="text_field">
+                    <label>PASSWORD</label>
+                    <input type="password" name="" value="" class="text_field">
+                </div>
+            </form>
+            <div class="bottom_area">
+                <ul>
+                    <li class="no_padd_left"><a href="#">FORGOT PASSWORD </a></li>
+                    <li class="no_padd_right no_bg"><a href="#">SIGN UP</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="spacer2"></div>
+    </div>
+   <!--wrapper-->
+   
+   <!--wrapper-->
+   	<div class="wrapper">
+        	<!--footer-->
+            <div class="footer clearfix">
+            	<span>COPYRIGHT JOBLOOK 2013</span>
+                
+                <!--social_icon-->
+                <div class="social_icon">
+                	<ul>
+                    	<li class="no_padd_left"><a href="#"> <%= image_tag("fb_icon.png") %></a></li>
+                        <li><a href="#"> <%= image_tag("twitter_icon.png") %></a></li>
+                        <li class="no_padd_right"><a href="#"><%= image_tag("youtube_icon.png") %></a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--social_icon-->
+            </div>
+            <!--footer-->
+        </div>
+  <!--wrapper-->
+    
+</body>
+</html>
