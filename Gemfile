@@ -7,9 +7,12 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem "tzinfo", "~> 0.3.37"
 
 # Use sqlite3 as the database for Active Record
-gem 'pg'
-group :test do
-  gem 'sqlite3'
+group :development do
+   gem 'sqlite3'
+end
+
+group :production do
+  gem "pg", "~> 0.17.1"
 end
 
 # Use SCSS for stylesheets
