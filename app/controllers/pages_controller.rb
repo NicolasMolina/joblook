@@ -8,4 +8,6 @@ class PagesController < ActionController::Base
   def createjob
   end
   
+  def landing
+  end
 end
