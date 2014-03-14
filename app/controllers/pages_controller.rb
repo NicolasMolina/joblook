@@ -10,4 +10,7 @@ class PagesController < ActionController::Base
   
   def landing
   end
+  
+  def sign_up
+  end
 end
