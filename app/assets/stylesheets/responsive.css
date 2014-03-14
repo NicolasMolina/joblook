@@ -116,6 +116,8 @@
 	.login_btn { padding:0 13px; width:73px; text-align:center; display:block;}
 	.checkout_cont { border:0; font-size:15px;}
 	.checkout_cont h3 { padding:4px 0;}
+	.checkout_cont2 { border:0; font-size:15px;}
+	.checkout_cont2 h3 { padding:10px 10px;}
 	.select_box2 .dd .ddTitle { font-size:17px !important;}
 	.select_box2 .dd .ddTitle span.arrow { background-position:0 -3px !important;}
 	.cont_block li small a { display:inline-block;}

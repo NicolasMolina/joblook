@@ -5,14 +5,34 @@
 <!--[if IE 8]><html class="ie8 ie"><![endif]-->
 <!--[if IE 9]><html class="ie9 ie"><![endif]-->
 <head>
-<%= stylesheet_link_tag "application" %>
 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Inner3</title>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/dd.css" rel="stylesheet" type="text/css">
+<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".dropdown2").msDropDown();
+	$(".dropdown3").msDropDown();
+	
+	$('.toggle_btn').click(function(){
+		$(this).next().slideToggle();
+		});
+})
+</script>
 <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
+    <script src="js/respond-1.1.0.min.js"></script>
 <![endif]-->
 </head>
-
+<%= stylesheet_link_tag "application" %>
 <body>
 	<!--header-->
     <div class="header">
@@ -43,7 +63,7 @@
                 <strong>HOME</strong>
                 
                 <!--toggle_btn-->
-                <div class="toggle_btn"> <%= image_tag("toggle_nav.png")%> </div>
+                <div class="toggle_btn"><%= image_tag("toggle_nav.png") %> </div>
                 <!--toggle_btn-->
                 
                 <!--toggle_nav-->
@@ -52,9 +72,9 @@
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
                         <li><a href="#">TERMS AND CONDITIONS</a></li>
-					
                     </ul>
                 </div>
+                <!--toggle_nav-->
             </div>
             <!--header_cont-->
             <div class="clear"></div>
@@ -62,7 +82,7 @@
             
             <!--profile-->
             <div class="profile odd1">
-                <h1><strong>JOB CLASSIFIEDS</strong></h1>
+                <h1><strong>PAINTER</strong></h1>
                 <span></span>
                 <div class="clear"></div>
                 
@@ -81,10 +101,19 @@
                 <!--profile_nav-->
                  <div class="clear"></div>
                     <!--mob_nav-->
-
+                    <div class="mob_nav">
+                        <ul id="foo">
+                            <li><a href="#">SIGN UP</a></li>
+                            <li><a href="#">CREATE A C.V</a></li>
+                            <li><a href="#">SUBMIT A VACANCIES</a></li>
+                            <li><a href="#">SEARCH C.V'<sub>s</sub></a></li>
+                        </ul>
+                   
+                    </div>
                     <!--mob_nav-->
                     
-                   
+                    <a href="#" class="prev_arrow"><%= image_tag("prev_arrow.png")%></a>
+                    <a href="#" class="next_arrow"><%= image_tag("next_arrow.png")%></a>
                 </div>
                 <!--profile_nav_area-->
             </div>
@@ -95,14 +124,72 @@
     <!--header-->
     
     
-   
+    <!--container-->
+        <div class="container odd2">
+        	<!--wrapper-->
+            <div class="wrapper">
+            	<!--job_details-->
+                <div class="job_details">
+                	<!--job_detail_block-->
+                    <div class="job_detail_block">
+                    	<h2>JACKS PAINT <small>04 DECEMBER 2013</small></h2>
+                        <p>
+                        	Painter must have previous work experiance, no criminal record and be available to work 5 days a week 08H00 - 17H00, must have trasport to Rosebank
+                        </p>
+                        <a href="#">VIEW JOB</a>
+                        <a href="#">SUBMIT C.V</a>
+                        <div class="clear"></div>
+                    </div>
+                    <!--job_detail_block-->
+                    
+                    <!--job_detail_block-->
+                    <div class="job_detail_block">
+                    	<h2>HOUSE JOB <small>04 DECEMBER 2013</small></h2>
+                        <p>
+                        	Painter must have previous work experiance, no criminal record and be available to work 5 days a week 08H00 - 17H00, must have trasport to Rosebank
+                        </p>
+                        <a href="#">VIEW JOB</a>
+                        <a href="#">SUBMIT C.V</a>
+                        <div class="clear"></div>
+                    </div>
+                    <!--job_detail_block-->
+                    
+                    <!--job_detail_block-->
+                    <div class="job_detail_block">
+                    	<h2>PAINTING ASSISTANT <small>04 DECEMBER 2013</small></h2>
+                        <p>
+                        	Painter must have previous work experiance, no criminal record and be available to work 5 days a week 08H00 - 17H00, must have trasport to Rosebank
+                        </p>
+                        <a href="#">VIEW JOB</a>
+                        <a href="#">SUBMIT C.V</a>
+                        <div class="clear"></div>
+                    </div>
+                    <!--job_detail_block-->
+                    
+                    <!--job_detail_block-->
+                    <div class="job_detail_block">
+                    	<h2>CONTRACT PAINTER <small>04 DECEMBER 2013</small></h2>
+                        <p>
+                        	Painter must have previous work experiance, no criminal record and be available to work 5 days a week 08H00 - 17H00, must have trasport to Rosebank
+                        </p>
+                        <a href="#">VIEW JOB</a>
+                        <a href="#">SUBMIT C.V</a>
+                        <div class="clear"></div>
+                    </div>
+                    <!--job_detail_block-->
+                </div>
+                <!--job_details-->
+            </div>
+            <!--wrapper-->
+        </div>
+        <!--container-->
         
         
         <!--wrapper-->
         <div class="wrapper">
             <!--checkout_cont-->
-            <div class="checkout_cont2">
-                <h3>SELECT YOUR PREFERRED JOB CATEGORY:</h3>
+            <div class="checkout_cont">
+                <h3>ALSO CHECK OUT:</h3>
                <!-- <div class="select_box2">
                     <select class="dropdown2" style="width:100%;">
                         <option>VIEW ALL</option>
@@ -110,17 +197,17 @@
                         <option>VIEW ALL</option>
                     </select>
                 </div> -->
-              
+                <div class="clear"></div>
             </div>
             <!--checkout_cont-->
-            <div class="clear"></div>
+            
             <!--cont_block-->
             <div class="cont_block">
             	<div class="select_box3">
                 	<select class="dropdown3" style="width:100%;">
                     	<option>CASUAL LABOUR</option>
-                        <option>PERMANENT JOBS</option>
-                        <option>PROFESSIONAL</option>
+                        <option>CASUAL LABOUR</option>
+                        <option>CASUAL LABOUR</option>
                     </select>
                 </div>
                 
@@ -177,7 +264,9 @@
                 <!--social_icon-->
                 <div class="social_icon">
                 	<ul>
-                    	<%= render :partial => "social" %>
+                    	<li class="no_padd_left"><a href="#"><%= image_tag("fb_icon.png") %> </a></li>
+                        <li><a href="#"><%= image_tag("fb_icon.png") %></a></li>
+                        <li class="no_padd_right"><a href="#"><%= image_tag("youtube_icon.png") %></a></li>
                     </ul>
                 </div>
                 <!--social_icon-->
@@ -185,6 +274,25 @@
             <!--footer-->
         </div>
         <!--wrapper-->
-            
+        
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#foo').carouFredSel({
+			auto: false,
+			responsive: true,
+			width: '100%',
+			prev: '.prev_arrow',
+			next: '.next_arrow',
+			scroll: 1,
+			items: {
+				height: 'variable',
+				visible: {
+					min: 2,
+					max: 4
+					}
+				}
+			});	
+	});
+</script>             
 </body>
 </html>
