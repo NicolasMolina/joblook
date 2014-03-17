@@ -34,7 +34,6 @@
                     <ul>
                         <li class="no_padd_left"><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">LOG IN</a></li>
                         <li class="no_padd_right no_bg"><a href="#">TERMS AND CONDITIONS</a></li>
                     </ul>
                     <div class="clear"></div>
@@ -71,10 +70,10 @@
             	<!--profile_nav-->
                 <div class="profile_nav">
                 	<ul>
-                        <li><a href="#">SIGN UP</a></li>
-                        <li><a href="#">CREATE A C.V</a></li>
-                        <li><a href="#">SUBMIT A VACANCIES</a></li>
-                       
+						<li><%= link_to 'SIGN IN', :'landing'%></li>                      
+                        <li><%= link_to 'CREATE A C.V', :'sign_up'%> </li>
+                        <li><%= link_to 'POST A JOB OPENING', :'job_sign_up'%></li>
+						
                     </ul>
                     <div class="clear"></div>
                 </div>
