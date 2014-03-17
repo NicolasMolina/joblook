@@ -5,15 +5,8 @@
 <!--[if IE 8]><html class="ie8 ie"><![endif]-->
 <!--[if IE 9]><html class="ie9 ie"><![endif]-->
 <head>
+<%= stylesheet_link_tag "application" %>
 
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$('.toggle_btn').click(function(){
-		$(this).next().slideToggle();
-		});
-})
-</script>
 <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/html5element.js"></script>
@@ -22,9 +15,7 @@ $(document).ready(function() {
 
 <body>
 	
-    <% if user_signed_in? %>
-		<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
-	<% end%>
+ 
     <!--header-->
     <div class="header">
         <!--wrapper-->
@@ -34,6 +25,7 @@ $(document).ready(function() {
                 <!--navigation-->
                 <div class="navigation">
                     <ul>
+						<li class="no_padd_leftleft"><a href="#">SIGN IN</a></li>
                         <li class="no_padd_left"><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
                         <li class="no_padd_right no_bg"><a href="#">TERMS AND CONDITIONS</a></li>
@@ -53,6 +45,7 @@ $(document).ready(function() {
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
                         <li><a href="#">TERMS AND CONDITIONS</a></li>
+					
                     </ul>
                 </div>
                 <!--toggle_nav-->
@@ -62,7 +55,7 @@ $(document).ready(function() {
             <div class="logo odd4 odd13">
                <%= image_tag("logo_img.png") %>
                 <!--login_btn-->
-                <div class="login_btn"><a href="#"> SIGN IN</a></div>
+               
                 <!--login_btn-->
             </div>
             <div class="clear"></div>
@@ -72,34 +65,30 @@ $(document).ready(function() {
     </div>
     <!--header--> 
     
-   <!--wrapper-->   
-    <div class="wrapper">
-    	<div class="form_area">
-        	<form action="#" method="post">
-                <div>
-                    <label>USERNAME</label>
-                    <input type="text" name="text" value="" class="text_field">
-                    <label>PASSWORD</label>
-                    <input type="password" name="" value="" class="text_field">
-                </div>
-            </form>
-            <div class="bottom_area">
-                <ul>
-                    <li class="no_padd_left"><a href="#">FORGOT PASSWORD </a></li>
-                    <li class="no_padd_right no_bg"><a href="#">SIGN UP</a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="spacer2"></div>
-    </div>
+   <!--wrapper-->  
+   <div class="wrapper">
+   		<div class="form_area">
+	   	 	<div class="butt_left">
+			 <%= link_to 'FIND A JOB', :'jobs' %>
+			</div>
+ 	   	 	<div class="butt_right">
+    	  	<%= link_to 'CREATE A C.V', :'sign_up' %>	
+				<a href="#"> </a> 
+ 			</div>
+  	   	 	<div class="butt_right">
+			<%= link_to 'POST A JOB', :'job_sign_up' %>	
+     	  	
+  			</div>
+    	</div>
+    	<div class="spacer2"></div>
+		</div>
    <!--wrapper-->
    
    <!--wrapper-->
    	<div class="wrapper">
         	<!--footer-->
             <div class="footer clearfix">
-            	<span>COPYRIGHT JOBLOOK 2013</span>
+            	<span>COPYRIGHT JOBLOOK 2014</span>
                 
                 <!--social_icon-->
                 <div class="social_icon">

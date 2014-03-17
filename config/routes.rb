@@ -9,6 +9,10 @@ Joblook::Application.routes.draw do
   get '/createjob', :to => 'pages#createjob'
   get '/landing', :to => 'pages#landing'
   get '/sign_up', :to => 'pages#sign_up'
+  get '/job_sign_up', :to => 'pages#job_sign_up'
+  get '/specificjob', :to => 'pages#specificjob'
+
+  
 end
     
 # SampleApp::Application.routes.draw do

@@ -13,4 +13,11 @@ class PagesController < ActionController::Base
   
   def sign_up
   end
+  
+  def job_sign_up
+  end
+  
+  def specificjob
+  end
+  
 end

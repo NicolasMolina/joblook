@@ -6,31 +6,6 @@
 <!--[if IE 9]><html class="ie9 ie"><![endif]-->
 <head>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Inner3</title>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/dd.css" rel="stylesheet" type="text/css">
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.dd.js"></script>
-<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".dropdown2").msDropDown();
-	$(".dropdown3").msDropDown();
-	
-	$('.toggle_btn').click(function(){
-		$(this).next().slideToggle();
-		});
-})
-</script>
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-<![endif]-->
 </head>
 <%= stylesheet_link_tag "application" %>
 <body>
@@ -54,7 +29,7 @@ $(document).ready(function() {
                     <ul>
                         <li class="no_padd_left"><a href="#">ABOUT US</a></li>
                         <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">LOG IN</a></li>
+                
                         <li class="no_padd_right no_bg"><a href="#">TERMS AND CONDITIONS</a></li>
                     </ul>
                     <div class="clear"></div>
@@ -91,29 +66,16 @@ $(document).ready(function() {
             	<!--profile_nav-->
                 <div class="profile_nav">
                 	<ul>
-                        <li><a href="#">SIGN UP</a></li>
+                        
                         <li><a href="#">CREATE A C.V</a></li>
-                        <li><a href="#">SUBMIT A VACANCIES</a></li>
-                        <li class="no_bg no_padd_right"><a href="#">SEARCH C.V'<sub>s</sub></a></li>
+                        <li><a href="#">MY PROFILE</a></li>
                     </ul>
                     <div class="clear"></div>
                 </div>
                 <!--profile_nav-->
                  <div class="clear"></div>
                     <!--mob_nav-->
-                    <div class="mob_nav">
-                        <ul id="foo">
-                            <li><a href="#">SIGN UP</a></li>
-                            <li><a href="#">CREATE A C.V</a></li>
-                            <li><a href="#">SUBMIT A VACANCIES</a></li>
-                            <li><a href="#">SEARCH C.V'<sub>s</sub></a></li>
-                        </ul>
-                   
-                    </div>
-                    <!--mob_nav-->
                     
-                    <a href="#" class="prev_arrow"><%= image_tag("prev_arrow.png")%></a>
-                    <a href="#" class="next_arrow"><%= image_tag("next_arrow.png")%></a>
                 </div>
                 <!--profile_nav_area-->
             </div>
@@ -186,72 +148,7 @@ $(document).ready(function() {
         
         
         <!--wrapper-->
-        <div class="wrapper">
-            <!--checkout_cont-->
-            <div class="checkout_cont">
-                <h3>ALSO CHECK OUT:</h3>
-               <!-- <div class="select_box2">
-                    <select class="dropdown2" style="width:100%;">
-                        <option>VIEW ALL</option>
-                        <option>VIEW ALL</option>
-                        <option>VIEW ALL</option>
-                    </select>
-                </div> -->
-                <div class="clear"></div>
-            </div>
-            <!--checkout_cont-->
-            
-            <!--cont_block-->
-            <div class="cont_block">
-            	<div class="select_box3">
-                	<select class="dropdown3" style="width:100%;">
-                    	<option>CASUAL LABOUR</option>
-                        <option>CASUAL LABOUR</option>
-                        <option>CASUAL LABOUR</option>
-                    </select>
-                </div>
-                
-                <ul>
-                	<li>
-                        <a href="#"> <%= image_tag("block_pic1.png") %> </a>
-                        <strong>BLOCKMAN</strong>
-                        <small>27 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                    
-                    <li>
-                        <a href="#"><%= image_tag("block_pic2.png") %></a>
-                        <strong>PAINTER</strong>
-                        <small>16 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                    
-                    <li class="no_margin">
-                        <a href="#"><%= image_tag("block_pic3.png") %></a>
-                        <strong>PLUMBER</strong>
-                        <small>5 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                    
-                    <li>
-                        <a href="#"><%= image_tag("block_pic4.png") %></a>
-                        <strong>DOMESTIC WORKER</strong>
-                        <small>27 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                    
-                    <li>
-                        <a href="#"><%= image_tag("block_pic5.png") %></a>
-                        <strong>BUILDER</strong>
-                        <small>16 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                    
-                    <li class="no_margin">
-                        <a href="#"><%= image_tag("block_pic6.png") %></a>
-                        <strong>GARDENER</strong>
-                        <small>5 VACANCIES<a href="#">VIEW</a></small>
-                    </li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-            <!--cont_block-->
-        </div>
+        
         <!--wrapper-->
         
         
